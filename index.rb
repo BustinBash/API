@@ -7,6 +7,7 @@ get '/' do
 end
 
 DATABASE = {
+  {
   "Lesson1" => {
     "Answer" => "pwd",
     "Branches" => [ "usa", "mexico", "canada" ],
@@ -68,60 +69,71 @@ DATABASE = {
     "Title" => "Change Directory"
   },
   "Lesson6" => {
+    "Answer" => "touch the_bay.txt",
+    "Error" => "oops! Looks like you didn't create a new file called the_bay.txt",
+    "Hint" => "just type touch then the filename to create a new file",
+    "ID" => 6,
+    "Instructions" => "You can create new files easily with the touch command. Creating a new file is super easy! Just type 'touch' then the name of the file you would like to create.",
+    "Question" => "Create a new file called the_bay.txt",
+    "Success" => "",
+    "Title" => "Create File"
+  },
+  "Lesson7" => {
+    "Answer" => "rm the_bay.txt",
+    "Error" => "oops! Looks like you delete the newly created file called the_bay.txt",
+    "Hint" => "just type 'rm' then the filename to delete the file",
+    "ID" => 7,
+    "Instructions" => "You can delete the file by typing 'rm' followed by filename.",
+    "Question" => "Delete the file called the_bay.txt",
+    "Success" => "File Deleted",
+    "Title" => "Delete File"
+  },
+  "Lesson8" => {
     "Answer" => "cd ..",
     "Branches" => [ "san_francisco", "newyork_city", "austin" ],
     "Error" => "Seems like you didn't traverse up one level in your directory.  Try again.",
     "Hint" => "Please Change Directories to continue (cd ..)",
-    "ID" => 6,
-    "Instructions" => "Please cd back to 'ca' folder.",
+    "ID" => 8,
+    "Instructions" => "Please cd back to 'san_francisco' folder.",
     "Question" => "Change your current directory to /ca",
     "Success" => "/ca",
     "Target" => "ca",
     "Title" => "Change Directory"
   },
-  "Lesson7" => {
+  "Lesson9" => {
     "Answer" => "mkdir marin",
     "Branches" => [ "ggpark.txt", "crissyfield.txt", "giants.txt" ],
     "Error" => "Seems like you didn't create a directory called 'marin'.  Try again!",
     "Hint" => "You'll want to make use of the 'mkdir' command",
-    "ID" => 7,
+    "ID" => 9,
     "Instructions" => "Creating directories is an integral part of using Bash. A directory is a folder on your computer that contains other folders and files. To create a new directory we use the 'mkdir' command followed by the directory name.",
     "Question" => "Make a new directory in the san_francisco directory called marin.",
     "Success" => "mkdir marin",
-    "Target" => "ca",
+    "Target" => "san_francisco",
     "Title" => "Make Directory"
   },
-  "Lesson8" => {
+  "Lesson10" => {
     "Answer" => "rmdir marin",
     "Branches" => "",
     "Error" => "Seems like you didn't delete the directory correctly.  Try again.",
     "Hint" => "Please delete the directory marin to continue.",
-    "ID" => 8,
+    "ID" => 10,
     "Instructions" => "You can remove a folder easily with 'rmdir' followed by the directory name.",
     "Question" => "Delete the marin directory",
     "Success" => "",
-    "Target" => "ca",
+    "Target" => "san_francisco",
     "Title" => "Remove Directory"
   },
-  "Lesson9" => {
+  "Lesson11" => {
     "Answer" => "echo Bustin Bash",
     "Error" => "Seems like you didn't type the command correctly.  Try again.",
     "Hint" => "try typing something like 'echo your sentence here.'",
-    "ID" => 9,
+    "ID" => 11,
     "Instructions" => "The command 'echo' is used display text to the console. For example, '$echo Hey Universe' prints 'Hey Universe' to the screen. This is an example of Bash's STDOUT, or Standard Output, which is the output of a command. ",
     "Question" => "Print 'Bustin Bash' out to the console.",
     "Success" => "Bustin Bash",
     "Title" => "echo/STDOUT"
-  },
-  "Lesson10" => {
-    "Answer" => "touch the_bay.txt",
-    "Error" => "oops! Looks like you didn't create a new file called the_bay.txt",
-    "Hint" => "just type touch then the filename to create a new file",
-    "ID" => 10,
-    "Instructions" => "You can create new files easily with the touch command. Creating a new file is super easy! Just type 'touch' then the name of the file you would like to create.",
-    "Question" => "Create a new file called the_bay.txt",
-    "Success" => "",
-    "Title" => "touch"
   }
 }
+
 
