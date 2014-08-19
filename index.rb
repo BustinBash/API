@@ -7,7 +7,6 @@ get '/' do
 end
 
 DATABASE = {
-  {
   "Lesson1" => {
     "Answer" => "pwd",
     "Branches" => [ "usa", "mexico", "canada" ],
