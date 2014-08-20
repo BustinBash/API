@@ -61,7 +61,7 @@ DATABASE = {
     "Target" => "BustinBash",
     "Title" => "Change Directory",
     "Show" => "#divider4",
-    "Hide" => ".states, .places, #divider3"
+    "Hide" => "#marin"
   },
   "Lesson5" => {
     "Answer" => "cd usa/ca/san_francisco",
@@ -75,7 +75,7 @@ DATABASE = {
     "Target" => "san_francisco",
     "Title" => "Change Directory",
     "Show" => ".states, .cities, .places, #divider3, #divider4",
-    "Hide" => ""
+    "Hide" => "#the_bay"
   },
   "Lesson6" => {
     "Answer" => "touch the_bay.txt",
@@ -86,8 +86,8 @@ DATABASE = {
     "Question" => "Create a new file called the_bay.txt",
     "Success" => "",
     "Title" => "Create File",
-    "Show" => "#the_bay",
-    "Hide" => ""
+    "Show" => ".states, .cities, .places, #divider3, #divider4, #the_bay",
+    "Hide" => "#marin"
   },
   "Lesson7" => {
     "Answer" => "rm the_bay.txt",
@@ -98,8 +98,8 @@ DATABASE = {
     "Question" => "Delete the file called the_bay.txt",
     "Success" => "File Deleted",
     "Title" => "Delete File",
-    "Show" => "",
-    "Hide" => "#the_bay"
+    "Show" => ".states, .cities, .places, #divider3, #divider4",
+    "Hide" => "#the_bay, #marin"
   },
   "Lesson8" => {
     "Answer" => "cd ..",
@@ -107,13 +107,13 @@ DATABASE = {
     "Error" => "Seems like you didn't traverse up one level in your directory.  Try again.",
     "Hint" => "Please Change Directories to continue (cd ..)",
     "ID" => 8,
-    "Instructions" => "Please cd back to 'san_francisco' folder.",
+    "Instructions" => "Please cd back to the 'ca' folder.",
     "Question" => "Change your current directory to /ca",
     "Success" => "/ca",
     "Target" => "ca",
     "Title" => "Change Directory",
-    "Show" => "",
-    "Hide" => ".places"
+    "Show" => ".states, .cities, #divider3",
+    "Hide" => "#marin"
   },
   "Lesson9" => {
     "Answer" => "mkdir marin",
@@ -126,7 +126,7 @@ DATABASE = {
     "Success" => "mkdir marin",
     "Target" => "san_francisco",
     "Title" => "Make Directory",
-    "Show" => "#marin",
+    "Show" => ".states, .cities, #divider3, #marin",
     "Hide" => ""
   },
   "Lesson10" => {
@@ -140,7 +140,7 @@ DATABASE = {
     "Success" => "",
     "Target" => "san_francisco",
     "Title" => "Remove Directory",
-    "Show" => "",
+    "Show" => ".states, .cities, #divider3",
     "Hide" => "#marin"
   },
 
@@ -157,18 +157,118 @@ DATABASE = {
     "Target" => "Bustin Bash"
 
   },
+
   "Lesson12" => {
-    "Answer" => "echo 'Bustin Bash'",
+    "Answer" => "echo Bustin Bash",
     "Error" => "Seems like you didn't type the command correctly.  Try again.",
     "Hint" => "try typing something like 'echo your sentence here.'",
     "ID" => 12,
     "Instructions" => "The command 'echo' is used display text to the console. For example, '$echo Hey Universe' prints 'Hey Universe' to the screen. This is an example of Bash's STDOUT, or Standard Output, which is the output of a command. ",
-    "Question" => "Print 'Bustin Bash' out to the console.",
+    "Question" => "Print Bustin Bash out to the console.",
     "Success" => "Bustin Bash",
     "Title" => "echo/STDOUT",
     "Show" => "",
     "Hide" => ".states, .cities, .places, #divider3, #divider4"
-  }
+  },
+
+  "Lesson13" => {
+    "Answer" => "cd usa/ca/san_francisco",
+    "Error" => "Seems like you didn't type the command correctly.  Try again.",
+    "Hint" => "cd into san_francisco",
+    "ID" => 13,
+    "Instructions" => "We're gonna need to cd into foggy san_francisco to manipulate some text files...",
+    "Question" => "cd into san_francisco",
+    "Success" => "",
+    "Title" => "cd",
+      "Show" => ".states, .cities, .places, #divider3, #divider4",
+    "Hide" => "#the_bay"
+    },
+
+    "Lesson14" => {
+    "Answer" => "echo Hello World > ggpark.txt",
+    "Error" => "oops! harness the power of redirection!.",
+    "Hint" => "You can redirect STOUT like this: echo hello world > ggpark.txt",
+    "ID" => 14,
+    "Instructions" => "One of bash's most powerful utilities is its ability to redirect output, input, and send the results of one command to another. To redirect standard output, we use the '>' command, followed by the place we would like to send it to.",
+    "Question" => "Redirect the result of printing out Hello World to the screen to our ggpark.txt file",
+    "Success" => "",
+    "Title" => "Redirection",
+   "Show" => ".states, .cities, .places, #divider3, #divider4",
+    "Hide" => "#the_bay"
+    },
+
+    "Lesson15" => {
+    "Answer" => "cat ggpark.txt",
+    "Error" => "Seems like you didn't type the command correctly.  Try again.",
+    "Hint" => "Type cat followed by the file name you'd like to open",
+    "ID" => 15,
+    "Instructions" => "You can open up the contents of a file by using the 'cat' command followed by the file name",
+    "Question" => "Open up the contents of ggpark.txt",
+    "Success" => "Hello World",
+    "Title" => "Cat",
+    "Show" => ".states, .cities, .places, #divider3, #divider4",
+    "Hide" => "#the_bay"
+},
+    "Lesson16" => {
+    "Answer" => "cp ggpark.txt yo.txt",
+    "Error" => "Seems like you didn't copy ggpark.txt to yo.txt!",
+    "Hint" => "Here's a little help: cp ggpark.txt yo.txt",
+    "ID" => 16,
+    "Instructions" => "Good job! You're catching on fast... You can copy files by using the 'cp' command. This command takes the name of the files you'd like to copy followed by the name of a new file",
+    "Question" => "Copy the contents of ggpark.txt to a new file called 'yo.txt'",
+    "Success" => "",
+    "Title" => "Copy",
+    "Show" => ".states, .cities, .places, #divider3, #divider4, #yo",
+    "Hide" => "#the_bay"
+    },
+    "Lesson17" => {
+    "Answer" => "mv yo.txt foggy_nights.txt",
+    "Error" => "",
+    "Hint" => "Move should work like this: mv [file] [new file]",
+    "ID" => 17,
+    "Instructions" => "The mv command is a little confusing to use at first -- it is used to rename the name of a file or folder, OR to move it to another location on your computer. We suggest you try it out on your local terminal to check out its funcionality. mv takes two arguments just like cp, moving the first filename to the second one",
+    "Question" => "Rename 'yo.txt' to 'foggy_nights.txt'",
+    "Success" => "",
+    "Title" => "Move",
+    "Show" => ".states, .cities, .places, #divider3, #divider4, #foggy",
+    "Hide" => "#the_bay, #yo"
+    },
+    "Lesson18" => {
+    "Answer" => "read input",
+    "Error" => "Looks like you didn't capture the STDIN from the user...",
+    "Hint" => "Try 'read input'",
+    "ID" => 18,
+    "Instructions" => "STDIN stands for standard input, and is the source of input in all bash programs. An example of this is input from the keyboard. You can use the 'read' command followed by a string to hold input in a variable.",
+    "Question" => "read in a users input and set it to a variable called input",
+    "Success" => "..",
+    "Title" => "STDIN",
+    "Show" => ".states, .cities, .places, #divider3, #divider4, #foggy",
+    "Hide" => "#the_bay, #yo"
+    },
+    "Lesson19" => {
+    "Answer" => "I love bash",
+    "Error" => "Looks like you didn't capture the STDIN from the user...",
+    "Hint" => "Just type I love bash",
+    "ID" => 19,
+    "Instructions" => "Now set the value of input to the sentence 'I love bash'",
+    "Question" => "",
+    "Success" => "",
+    "Title" => "STDIN",
+    "Show" => ".states, .cities, .places, #divider3, #divider4, #foggy",
+    "Hide" => "#the_bay, #yo"
+    },
+    "Lesson20" => {
+    "Answer" => "echo $input",
+    "Error" => "oops! Didn't echo out the input!",
+    "Hint" => "Just type I love bash",
+    "ID" => 20,
+    "Instructions" => "You can access variables in bash by using the dollar sign ($). Try printing out the variable you just set, input, out to the screen.",
+    "Question" => "",
+    "Success" => "I love bash",
+    "Title" => "Variables",
+    "Show" => ".states, .cities, .places, #divider3, #divider4, #foggy",
+    "Hide" => "#the_bay, #yo"
+    }
 }
 
 
