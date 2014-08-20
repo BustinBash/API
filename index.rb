@@ -17,7 +17,7 @@ DATABASE = {
     "Question" => "Print out the current working directory.",
     "Success" => "/BustinBash",
     "Target" => "",
-    "Title" => "Print Working Directory"
+    "Title" => "Print Working Directory",
     "Show" => "",
     "Hide" => ""
   },
@@ -46,7 +46,7 @@ DATABASE = {
     "Success" => "/usa",
     "Target" => "usa",
     "Title" => "Change Directory",
-    "Show" => "'.states, #divider3'",
+    "Show" => ".states, #divider3",
     "Hide" => ""
   },
   "Lesson4" => {
@@ -60,8 +60,8 @@ DATABASE = {
     "Success" => "/BustinBash",
     "Target" => "BustinBash",
     "Title" => "Change Directory",
-    "Show" => "",
-    "Hide" => ""
+    "Show" => "#divider4",
+    "Hide" => ".states, .places, #divider3"
   },
   "Lesson5" => {
     "Answer" => "cd usa/ca/san_francisco",
@@ -74,7 +74,7 @@ DATABASE = {
     "Success" => "usa/ca/san_francisco",
     "Target" => "san_francisco",
     "Title" => "Change Directory",
-    "Show" => "",
+    "Show" => ".states, .cities, .places, #divider3, #divider4",
     "Hide" => ""
   },
   "Lesson6" => {
@@ -86,7 +86,7 @@ DATABASE = {
     "Question" => "Create a new file called the_bay.txt",
     "Success" => "",
     "Title" => "Create File",
-    "Show" => "",
+    "Show" => "#the_bay",
     "Hide" => ""
   },
   "Lesson7" => {
@@ -99,7 +99,7 @@ DATABASE = {
     "Success" => "File Deleted",
     "Title" => "Delete File",
     "Show" => "",
-    "Hide" => ""
+    "Hide" => "#the_bay"
   },
   "Lesson8" => {
     "Answer" => "cd ..",
@@ -113,7 +113,7 @@ DATABASE = {
     "Target" => "ca",
     "Title" => "Change Directory",
     "Show" => "",
-    "Hide" => ""
+    "Hide" => ".places"
   },
   "Lesson9" => {
     "Answer" => "mkdir marin",
@@ -126,7 +126,7 @@ DATABASE = {
     "Success" => "mkdir marin",
     "Target" => "san_francisco",
     "Title" => "Make Directory",
-    "Show" => "",
+    "Show" => "#marin",
     "Hide" => ""
   },
   "Lesson10" => {
@@ -141,7 +141,7 @@ DATABASE = {
     "Target" => "san_francisco",
     "Title" => "Remove Directory",
     "Show" => "",
-    "Hide" => ""
+    "Hide" => "#marin"
   },
   "Lesson11" => {
     "Answer" => "echo Bustin Bash",
@@ -153,7 +153,7 @@ DATABASE = {
     "Success" => "Bustin Bash",
     "Title" => "echo/STDOUT",
     "Show" => "",
-    "Hide" => ""
+    "Hide" => ".states, .cities, .places, #divider3, #divider4"
   }
 }
 
