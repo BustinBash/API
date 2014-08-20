@@ -2,7 +2,7 @@ require 'sinatra'
 require 'json'
 get '/' do
 	response.headers['Access-Control-Allow-Origin'] = '*'
-	content_type :json 
+	content_type :json
 	DATABASE.to_json
 end
 
@@ -18,6 +18,8 @@ DATABASE = {
     "Success" => "/BustinBash",
     "Target" => "",
     "Title" => "Print Working Directory"
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson2" => {
     "Answer" => "ls",
@@ -29,7 +31,9 @@ DATABASE = {
     "Question" => "Display the contents of the current directory..",
     "Success" => "ca ny tx",
     "Target" => "",
-    "Title" => "List Directory / Files"
+    "Title" => "List Directory / Files",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson3" => {
     "Answer" => "cd usa",
@@ -41,7 +45,9 @@ DATABASE = {
     "Question" => "Change your current directory to /usa",
     "Success" => "/usa",
     "Target" => "usa",
-    "Title" => "Change Directory"
+    "Title" => "Change Directory",
+    "Show" => "'.states, #divider3'",
+    "Hide" => ""
   },
   "Lesson4" => {
     "Answer" => "cd ..",
@@ -53,7 +59,9 @@ DATABASE = {
     "Question" => "Change your current directory to /BustinBash",
     "Success" => "/BustinBash",
     "Target" => "BustinBash",
-    "Title" => "Change Directory"
+    "Title" => "Change Directory",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson5" => {
     "Answer" => "cd usa/ca/san_francisco",
@@ -65,7 +73,9 @@ DATABASE = {
     "Question" => "Change directories to san_francisco'.",
     "Success" => "usa/ca/san_francisco",
     "Target" => "san_francisco",
-    "Title" => "Change Directory"
+    "Title" => "Change Directory",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson6" => {
     "Answer" => "touch the_bay.txt",
@@ -75,7 +85,9 @@ DATABASE = {
     "Instructions" => "You can create new files easily with the touch command. Creating a new file is super easy! Just type 'touch' then the name of the file you would like to create.",
     "Question" => "Create a new file called the_bay.txt",
     "Success" => "",
-    "Title" => "Create File"
+    "Title" => "Create File",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson7" => {
     "Answer" => "rm the_bay.txt",
@@ -85,7 +97,9 @@ DATABASE = {
     "Instructions" => "You can delete the file by typing 'rm' followed by filename.",
     "Question" => "Delete the file called the_bay.txt",
     "Success" => "File Deleted",
-    "Title" => "Delete File"
+    "Title" => "Delete File",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson8" => {
     "Answer" => "cd ..",
@@ -97,7 +111,9 @@ DATABASE = {
     "Question" => "Change your current directory to /ca",
     "Success" => "/ca",
     "Target" => "ca",
-    "Title" => "Change Directory"
+    "Title" => "Change Directory",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson9" => {
     "Answer" => "mkdir marin",
@@ -109,7 +125,9 @@ DATABASE = {
     "Question" => "Make a new directory in the san_francisco directory called marin.",
     "Success" => "mkdir marin",
     "Target" => "san_francisco",
-    "Title" => "Make Directory"
+    "Title" => "Make Directory",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson10" => {
     "Answer" => "rmdir marin",
@@ -121,7 +139,9 @@ DATABASE = {
     "Question" => "Delete the marin directory",
     "Success" => "",
     "Target" => "san_francisco",
-    "Title" => "Remove Directory"
+    "Title" => "Remove Directory",
+    "Show" => "",
+    "Hide" => ""
   },
   "Lesson11" => {
     "Answer" => "echo Bustin Bash",
@@ -131,7 +151,9 @@ DATABASE = {
     "Instructions" => "The command 'echo' is used display text to the console. For example, '$echo Hey Universe' prints 'Hey Universe' to the screen. This is an example of Bash's STDOUT, or Standard Output, which is the output of a command. ",
     "Question" => "Print 'Bustin Bash' out to the console.",
     "Success" => "Bustin Bash",
-    "Title" => "echo/STDOUT"
+    "Title" => "echo/STDOUT",
+    "Show" => "",
+    "Hide" => ""
   }
 }
 
