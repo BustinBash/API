@@ -29,7 +29,7 @@ DATABASE = {
     "ID" => 2,
     "Instructions" => "ls is used to display the contents of a directory. It is an extremely useful command that you'll use all the time, so get use to it! ",
     "Question" => "Display the contents of the current directory..",
-    "Success" => "ca ny tx",
+    "Success" => "usa, mexico, canada",
     "Target" => "",
     "Title" => "List Directory / Files",
     "Show" => "",
@@ -143,11 +143,25 @@ DATABASE = {
     "Show" => "",
     "Hide" => "#marin"
   },
+
   "Lesson11" => {
-    "Answer" => "echo Bustin Bash",
+    "Answer" => "cd",
+    "Error" => "Seems like you didn't type the command correctly.  Try again.",
+    "Hint" => "try typing something like 'cd'",
+    "ID" => 11,
+    "Instructions" => "The command 'cd' is used to go back to home directory, Bustin Bash in this case.",
+    "Question" => "Please go back to Home Directory, 'Bustin Bash' in this case.",
+    "Success" => "You are on Home Directory",
+    "Title" => "Back to Home Directory",
+    "Branches" => [ "usa", "mexico", "canada" ],
+    "Target" => "Bustin Bash"
+
+  },
+  "Lesson12" => {
+    "Answer" => "echo 'Bustin Bash'",
     "Error" => "Seems like you didn't type the command correctly.  Try again.",
     "Hint" => "try typing something like 'echo your sentence here.'",
-    "ID" => 11,
+    "ID" => 12,
     "Instructions" => "The command 'echo' is used display text to the console. For example, '$echo Hey Universe' prints 'Hey Universe' to the screen. This is an example of Bash's STDOUT, or Standard Output, which is the output of a command. ",
     "Question" => "Print 'Bustin Bash' out to the console.",
     "Success" => "Bustin Bash",
