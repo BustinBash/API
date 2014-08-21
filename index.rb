@@ -268,6 +268,18 @@ DATABASE = {
     "Title" => "Variables",
     "Show" => ".states, .cities, .places, #divider3, #divider4, #foggy",
     "Hide" => "#the_bay, #yo"
+    },
+    "Lesson21" => {
+    "Answer" => "please",
+    "Error" => "Ah ah ah! You didn't say the magic word!",
+    "Hint" => "Hold on to your butts!",
+    "ID" => 21,
+    "Instructions" => "Wow, you stuck it out! We at BustinBash are happy to have had the opportunity to assist you with some basic bash commands to get you on your feet. Check back with us as we may add more content. Then again, isn't that what every developer claims for their project - promises of future releases?  OP will surely deliver this time...",
+    "Question" => "You need to gain access to the security terminal in order to engage the electric fences.",
+    "Success" => "Welcome to Jurassic Park!",
+    "Title" => "The End",
+    "Show" => "",
+    "Hide" => ""
     }
 }
 
